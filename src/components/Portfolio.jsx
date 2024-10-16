@@ -46,9 +46,6 @@ function Portfolio() {
               <a onClick={() => scrollToSection("projects")}>Projects</a>
             </li>
             <li>
-              <a>Blog</a>
-            </li>
-            <li>
               <a>Services</a>
             </li>
             <button>Contact</button>
