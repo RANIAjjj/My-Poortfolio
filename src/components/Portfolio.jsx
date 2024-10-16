@@ -13,6 +13,9 @@ import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined
 import CodeOutlinedIcon from "@mui/icons-material/CodeOutlined";
 import AutoFixHighOutlinedIcon from "@mui/icons-material/AutoFixHighOutlined";
 import DevicesOutlinedIcon from "@mui/icons-material/DevicesOutlined";
+import labtop from "../assets/labtop.jpg";
+import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
+import EastIcon from "@mui/icons-material/East";
 
 function Portfolio() {
   const scrollToSection = (id) => {
@@ -40,7 +43,7 @@ function Portfolio() {
               <a onClick={() => scrollToSection("process")}>Process</a>
             </li>
             <li>
-              <a>Portfolio</a>
+              <a onClick={() => scrollToSection("projects")}>Projects</a>
             </li>
             <li>
               <a>Blog</a>
@@ -62,7 +65,6 @@ function Portfolio() {
           </div>
         </div>
       </nav>
-
       <header id="header">
         <div className="header-container">
           <div className="header-text">
@@ -209,8 +211,101 @@ function Portfolio() {
           </div>
         </div>
       </section>
-      <section className="portfolio-section">
-        <div className="portfolio-container"></div>
+      <section id="projects" className="projects-section">
+        <div className="portfolio-container">
+          <p className="text-3xl font-semibold">Projects</p>
+          <div className="portfolio-projects">
+            <div className="project hover:shadow-2xl hover:scale-105">
+              <img
+                src={labtop}
+                width={300}
+                style={{ borderRadius: "7px 7px 0 0" }}
+              />
+              <div className="project-content">
+                <p className="font-bold text-sm">Landing Page</p>
+                <p className="text-slate-500 text-xs">Web design</p>
+                <div className="buttons">
+                  <button className="text-sm font-semibold">
+                    Live <RemoveRedEyeIcon />{" "}
+                  </button>
+                  <button className="text-sm font-semibold">
+                    Code <CodeOutlinedIcon />{" "}
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="project hover:shadow-2xl hover:scale-105">
+              <img
+                src={labtop}
+                width={300}
+                style={{ borderRadius: "7px 7px 0 0" }}
+              />
+              <div className="project-content">
+                <p className="font-bold text-sm">Landing Page</p>
+                <p className="text-slate-500 text-xs">Web app</p>
+                <div className="buttons">
+                  <button className="text-sm font-semibold">
+                    Live <RemoveRedEyeIcon />{" "}
+                  </button>
+                  <button className="text-sm font-semibold">
+                    Code <CodeOutlinedIcon />{" "}
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="project hover:shadow-2xl hover:scale-105">
+              <img
+                src={labtop}
+                width={300}
+                style={{ borderRadius: "7px 7px 0 0" }}
+              />
+              <div className="project-content">
+                <p className="font-bold text-sm">Landing Page</p>
+                <p className="text-slate-500 text-xs">Web design</p>
+                <div className="buttons">
+                  <button className="text-sm font-semibold">
+                    Live <RemoveRedEyeIcon />{" "}
+                  </button>
+                  <button className="text-sm font-semibold">
+                    Code <CodeOutlinedIcon />{" "}
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="project hover:shadow-2xl hover:scale-105">
+              <img
+                src={labtop}
+                width={300}
+                style={{ borderRadius: "7px 7px 0 0" }}
+              />
+              <div className="project-content">
+                <p className="font-bold text-sm">Landing Page</p>
+                <p className="text-slate-500 text-xs">Web app</p>
+                <div className="buttons">
+                  <button className="text-sm font-semibold">
+                    Live <RemoveRedEyeIcon />{" "}
+                  </button>
+                  <button className="text-sm font-semibold">
+                    Code <CodeOutlinedIcon />{" "}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="hint-section">
+        <div className="hint-container">
+          <p className="text-3xl font-semibold text-slate-50">
+            Do you have a Project idea?
+          </p>
+          <p className="text-3xl font-semibold text-slate-50">
+            Let's discuss your project !
+          </p>
+          <button className="text-sm font-semibold text-slate-50">
+            Let’s work Together <EastIcon fontSize="small" />
+          </button>
+        </div>
       </section>
     </>
   );
