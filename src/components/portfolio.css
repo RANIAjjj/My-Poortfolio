@@ -13,9 +13,7 @@ body {
     --primary-color: rgba(165, 61, 255, 1);
     --hover-color: rgb(136, 0, 255);
     font-family: "Work Sans", sans-serif;
-}
-html {
-    scroll-behavior: smooth;
+    font-display: swap;
 }
 ul {
     list-style: none;
@@ -56,7 +54,7 @@ nav {
     gap: 4rem;
     align-items: center;
 }
-li :hover {
+li:not(:last-child) :hover {
     border-bottom: 4px solid var(--primary-color);
 }
 .brand {
@@ -78,12 +76,6 @@ ul button {
 }
 ul button:hover {
     background-color: var(--hover-color);
-}
-.langAndmode {
-    display: flex;
-    color: var(--primary-color);
-    column-gap: 10px;
-    align-items: center;
 }
 /* Header */
 .header-text-btn button {
@@ -129,8 +121,7 @@ header {
     justify-content: center;
     border-radius: 6px;
     height: 80vh;
-    position: relative;
-    top: 120px;
+   
 }
 .social-links {
     background-color: white;
@@ -163,8 +154,8 @@ header {
 /* Process */
 .process-section {
     background-color: rgb(230, 230, 230);
-    padding-top: 40vh;
-    padding-bottom: 13vh;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
 }
 .process-container {
     display: flex;
@@ -214,14 +205,14 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 60px;
     margin-top: 15vh;
     margin-bottom: 15vh;
 }
 .portfolio-projects {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+    gap: 35px;
+    margin-top: 50px;
 }
 .project {
     display: flex;
@@ -233,7 +224,6 @@ header {
 .project-content {
     display: flex;
     flex-direction: column;
-    /* row-gap: 15px; */
     padding: 20px;
 }
 .buttons {
@@ -252,20 +242,33 @@ header {
     background-color: var(--primary-color);
     color: white;
 }
-/* hint */
-.hint-section{
+/* CTA call to action*/
+.cta-section{
     background-color: rgba(19, 34, 56, 1);
     padding: 80px 0 80px 0;
 }
-.hint-container{
+.cta-container{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.hint-container button{
+.cta-container button{
     background-color: var(--primary-color);
     padding: 10px;
     border-radius: 3px;
     width: fit-content;
     margin-top: 50px;
+}
+/* skills */
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 0 60px 0;
+}
+.skills-icons{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+    gap: 40px;
 }
