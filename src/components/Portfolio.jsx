@@ -136,6 +136,7 @@ function Portfolio() {
       </nav>
 
       <header id="header">
+      <link rel="preload" href="../assets/header.webp" as="image"/>
         <div className="absolute left-0 top-0 -z-10 h-[100dvh] w-full bg-gradient-to-r from-pink-300 via-purple-200 to-indigo-200 opacity-30 blur-3xl"></div>
         <div className="header-container">
           <div className="header-text">
@@ -169,9 +170,8 @@ function Portfolio() {
           <img
             className="shadow-2xl border-current"
             src={headerImg}
-            loading="lazy"
-            alt="me2"
-            style={{ height: "25rem", borderRadius: "20px" }}
+            alt="rania"
+            style={{ height: "25rem", width: "19rem", borderRadius: "20px" }}
           />
         </div>
       </header>
@@ -182,9 +182,9 @@ function Portfolio() {
             <img
               className=" border-current"
               loading="lazy"
-              alt="me"
+              alt="rania"
               src={Img2}
-              style={{ width: "18rem", borderRadius: "7px" }}
+              style={{ width: "18rem", height: "23rem", borderRadius: "7px" }}
             />
             <div className="social-links shadow-2xl">
               <LinkedInIcon
@@ -297,6 +297,7 @@ function Portfolio() {
                 src={labtop}
                 alt="project preview"
                 width={490}
+                height={370}
                 style={{ borderRadius: "10px" }}
               />
               <div className="project-content">
@@ -321,6 +322,7 @@ function Portfolio() {
                 src={labtop}
                 alt="project preview"
                 width={490}
+                height={370}
                 style={{ borderRadius: "10px" }}
               />
               <div className="project-content">
@@ -345,6 +347,7 @@ function Portfolio() {
                 src={labtop}
                 alt="project preview"
                 width={490}
+                height={370}
                 style={{ borderRadius: "10px" }}
               />
               <div className="project-content">
@@ -369,6 +372,7 @@ function Portfolio() {
                 src={labtop}
                 alt="project preview"
                 width={490}
+                height={370}
                 style={{ borderRadius: "10px" }}
               />
               <div className="project-content">
@@ -419,6 +423,7 @@ function Portfolio() {
               loading="lazy"
               title="Html"
               width={150}
+              height={150}
             />
             <img
               src={css}
@@ -426,6 +431,7 @@ function Portfolio() {
               loading="lazy"
               title="CSS"
               width={130}
+              height={130}
             />
             <img
               src={js}
@@ -433,6 +439,7 @@ function Portfolio() {
               loading="lazy"
               title="JS"
               width={150}
+              height={150}
             />
             <img
               src={react}
@@ -440,6 +447,7 @@ function Portfolio() {
               loading="lazy"
               title="ReactJS"
               width={150}
+              height={150}
             />
             <img
               src={rtk}
@@ -447,6 +455,7 @@ function Portfolio() {
               loading="lazy"
               title="Readux Toolkit"
               width={150}
+              height={150}
             />
             <img
               src={tailwind}
@@ -454,6 +463,7 @@ function Portfolio() {
               loading="lazy"
               title="Tailwind css"
               width={150}
+              height={150}
             />
             <img
               src={typescript}
@@ -461,6 +471,7 @@ function Portfolio() {
               loading="lazy"
               title="TS"
               width={150}
+              height={150}
             />
             <img
               src={mui}
@@ -468,6 +479,7 @@ function Portfolio() {
               loading="lazy"
               title="MUI"
               width={150}
+              height={150}
             />
             <img
               src={nodejs}
@@ -475,6 +487,7 @@ function Portfolio() {
               loading="lazy"
               title="NodeJS"
               width={150}
+              height={150}
             />
             <img
               src={express}
@@ -482,6 +495,7 @@ function Portfolio() {
               loading="lazy"
               title="ExpressJS"
               width={180}
+              height={140}
             />
             <img
               src={mongo}
@@ -489,6 +503,7 @@ function Portfolio() {
               loading="lazy"
               title="Mongo DB"
               width={150}
+              height={150}
             />
             <img
               src={git}
@@ -496,6 +511,7 @@ function Portfolio() {
               loading="lazy"
               title="Git & GitHub"
               width={150}
+              height={150}
             />
             <img
               src={accessability}
@@ -503,6 +519,7 @@ function Portfolio() {
               loading="lazy"
               title="Accessability"
               width={150}
+              height={150}
             />
           </div>
         </div>
