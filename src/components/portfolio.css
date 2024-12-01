@@ -55,7 +55,10 @@ nav {
     align-items: center;
 }
 li:not(:last-child) :hover {
-    border-bottom: 4px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 14px 10px;
+    border-radius: 90px;
 }
 .brand {
     display: flex;
@@ -213,6 +216,7 @@ header {
     grid-template-columns: repeat(2, 1fr);
     gap: 35px;
     margin-top: 50px;
+    justify-items: center;
 }
 .project {
     display: flex;
@@ -220,6 +224,7 @@ header {
     border: 1px solid rgba(230, 232, 235, 1);
     border-radius: 10px;
     padding: 20px;
+    width: 74%;
 }
 .project-content {
     display: flex;
@@ -230,18 +235,12 @@ header {
     display: flex;
     column-gap: 10px;
     margin-top: 15px;
+    justify-content: space-around;
 }
-.project button {
-    width: 45%;
-    border: 1px solid var(--primary-color);
-    border-radius: 8px;
-    padding: 5px;
+.project a {
     color: var(--primary-color);
 }
-.project button:hover{
-    background-color: var(--primary-color);
-    color: white;
-}
+
 /* CTA call to action*/
 .cta-section{
     background-color: rgba(19, 34, 56, 1);
