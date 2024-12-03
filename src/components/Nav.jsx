@@ -1,6 +1,5 @@
 import React from "react";
 import "./portfolio.css";
-import { Helmet } from "react-helmet-async";
 import NightsStayIcon from "@mui/icons-material/NightsStay";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import { purple } from "@mui/material/colors";
@@ -82,7 +81,16 @@ function Nav() {
             </li>
             
             <li>
+              <a
+              href="#contact"
+              title="Go to contact Section"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("contact");
+              }}
+              >
               <button>Contact</button>
+              </a>
             </li>
           </ul>
           <div className="langAndmode">

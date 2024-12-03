@@ -22,9 +22,6 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
-a:hover {
-    color: var(--primary-color);
-}
 /* Nav */
 nav {
     position: fixed;
@@ -221,7 +218,7 @@ header {
 .project {
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(230, 232, 235, 1);
+    border: 1px solid rgb(196, 199, 204);
     border-radius: 10px;
     padding: 20px;
     width: 74%;
@@ -243,7 +240,7 @@ header {
 
 /* CTA call to action*/
 .cta-section{
-    background-color: rgba(19, 34, 56, 1);
+    background-color: #132238;
     padding: 80px 0 80px 0;
 }
 .cta-container{
@@ -270,4 +267,53 @@ header {
     grid-template-columns: repeat(7, 1fr);
     align-items: center;
     gap: 40px;
+}
+/* Contact Us */
+.contact-container{
+    display: flex;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 33%;
+}
+.info-container{
+    /* width: 50%; */
+}
+.details-item{
+    display: flex;
+    column-gap: 15px;
+    /* border: 1px solid rgb(202, 204, 209); */
+    width: 69%;
+    border-radius: 10px;
+    padding: 20px;
+}
+.info-details{
+    display: flex;
+    flex-direction: column;
+    column-gap: 18px;
+}
+form{
+    /* width: 30%; */
+}
+input ,textarea{
+    border-bottom: 2px solid #aa00ff;
+}
+.contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.form-container{
+    width: 35%;
+}
+.contact-section{
+    /* width: fit-content; */
+    padding: 20vh 0;
+}
+/* footer */
+footer{
+    padding: 6vh 0;
 }

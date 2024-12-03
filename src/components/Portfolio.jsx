@@ -8,6 +8,8 @@ import Process from "./Process";
 import Projects from "./Projects";
 import Cta from "./Cta";
 import Skills from "./Skills";
+import Contact from "./contact/Contact";
+import Footer from "./Footer";
 
 function Portfolio() {
   
@@ -28,6 +30,8 @@ function Portfolio() {
       <Projects/>
       <Cta/>
       <Skills/>
+      <Contact/>
+      <Footer/>
     </>
   );
 }

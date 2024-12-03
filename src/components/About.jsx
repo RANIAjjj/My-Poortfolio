@@ -6,21 +6,42 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import DownloadIcon from "@mui/icons-material/Download";
 import { purple } from "@mui/material/colors";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function About() {
   useEffect(() => {
     AOS.init({
-      duration: 1000, 
-      once: true,     
+      duration: 1000,
+      once: true,
     });
   }, []);
-  
+
+  const social = [
+    {
+      icon: LinkedInIcon,
+      link: "https://www.linkedin.com/in/ranya-mohamed/",
+      label: "LinkedIn",
+    },
+    {
+      icon: GitHubIcon,
+      link: "https://github.com/RANIAjjj",
+      label: "GitHub",
+    },
+    {
+      icon: WhatsAppIcon,
+      link: "https://wa.me/01147142033?text=Hello%2C%20I%20am%20interested%20in%20your%20services",
+      label: "WhatsApp Number",
+    },
+  ];
+
   return (
     <>
       <section id="about" className="about-section">
-        <div data-aos="fade-up" className="about-container shadow-2xl border-current">
+        <div
+          data-aos="fade-up"
+          className="about-container shadow-2xl border-current"
+        >
           <div className="about-part1">
             <img
               className=" border-current"
@@ -30,21 +51,16 @@ function About() {
               style={{ width: "18rem", height: "23rem", borderRadius: "7px" }}
             />
             <div className="social-links shadow-2xl">
-              <LinkedInIcon
-                fontSize="small"
-                sx={{ color: purple["A700"] }}
-                className="cursor-pointer"
-              />
-              <GitHubIcon
-                fontSize="small"
-                sx={{ color: purple["A700"] }}
-                className="cursor-pointer"
-              />
-              <WhatsAppIcon
-                fontSize="small"
-                sx={{ color: purple["A700"] }}
-                className="cursor-pointer"
-              />
+              {social.map((item, index) => (
+                <a key={index} href={item.link} target="_blank">
+                  <item.icon
+                    fontSize="small"
+                    sx={{ color: purple["A700"] }}
+                    className="cursor-pointer"
+                    aria-label={item.label}
+                  />
+                </a>
+              ))}
             </div>
           </div>
           <div className="about-part2">
