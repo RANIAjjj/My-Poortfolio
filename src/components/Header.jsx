@@ -26,7 +26,9 @@ function Header() {
               carefully crafted code and user-centric design.
             </p>
             <div className="header-text-btn font-semibold">
+              <a aria-label="WhatsApp Number" title="whatsApp link" href="https://wa.me/01147142033?text=Hello%2C%20I%20am%20interested%20in%20your%20services" target="_blank">
               <button>Say Hello!</button>
+              </a>
             </div>
             <div className="header-text-calcs">
               <div className="calcs-item">

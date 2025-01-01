@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import EastIcon from "@mui/icons-material/East";
 
 function Cta() {
@@ -12,13 +12,16 @@ function Cta() {
           <p className="text-3xl font-semibold text-slate-50">
             Let's discuss your project !
           </p>
-          <button className="text-md font-semibold text-slate-50">
-            Let’s work Together <EastIcon fontSize="small" />
-          </button>
+
+          <a href="#contact">
+            <button className="text-md font-semibold text-slate-50">
+              Let’s work Together <EastIcon fontSize="small" />
+            </button>
+          </a>
         </div>
       </section>
     </>
-  )
+  );
 }
 
-export default Cta
+export default Cta;

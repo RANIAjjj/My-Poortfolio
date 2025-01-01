@@ -28,7 +28,7 @@ function Form() {
           e.target.reset(); // Clear the form after success
         },
         (error) => {
-          console.error(error);
+          throw(error);
         }
       );
   };

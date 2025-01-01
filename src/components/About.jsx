@@ -52,12 +52,12 @@ function About() {
             />
             <div className="social-links shadow-2xl">
               {social.map((item, index) => (
-                <a key={index} href={item.link} target="_blank">
+                <a aria-label={item.label} title="social link" key={index} href={item.link} target="_blank">
                   <item.icon
                     fontSize="small"
                     sx={{ color: purple["A700"] }}
                     className="cursor-pointer"
-                    aria-label={item.label}
+                    
                   />
                 </a>
               ))}
@@ -76,8 +76,10 @@ function About() {
               maintain web apps ,and collaborating with UX teams.
             </p>
             <div className="header-text-btn font-semibold">
-              <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-500">
-                <DownloadIcon /> Download my CV
+              <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-500">
+               <a aria-label="cv" title="drive link for my cv" target="_blank" href="https://drive.google.com/file/d/1MxRdH3MiOAIkKhQOZepOYOXyar1kbqih/view?usp=sharing">
+                <DownloadIcon/> Preview my CV
+                </a> 
               </button>
             </div>
           </div>
