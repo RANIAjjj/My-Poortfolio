@@ -14,7 +14,7 @@ Welcome to my portfolio! This repository showcases my journey as a front-end dev
 This portfolio leverages the following technologies:  
 
 - **Frontend**: React, JavaScript (ES6+) , TailwindCSS , MUI
-- **Tools**: Redux Toolkit, React Router, React Helmet, Axios , AOS
+- **Tools**:  React Router, React Helmet , AOS
 - **Others**: SEO optimization, performance enhancements  
 
 ## 🛠️ Setup  
