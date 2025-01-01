@@ -109,10 +109,10 @@ function Skills() {
   ]
   return (
     <>
-      <section id="skills" className="skills-section">
+      <section id="skills" className="skills-section dark:bg-slate-800">
         <div className="skills-container">
-          <p className="text-4xl font-semibold">My Skills</p>
-          <p className="text-xl opacity-75">
+          <p className="text-4xl font-semibold dark:text-white">My Skills</p>
+          <p className="text-xl opacity-75 dark:text-slate-400">
             I'm always ready to learn new skills as the job requires, since continous
             learning is the key in software development.
           </p>

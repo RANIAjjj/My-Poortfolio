@@ -34,13 +34,13 @@ function Projects() {
 
   return (
     <>
-      <section id="projects" className="projects-section">
+      <section id="projects" className="projects-section dark:bg-slate-800">
         <div className="portfolio-container">
-          <p className="text-4xl font-semibold">Projects</p>
-          <p className="text-xl opacity-75">A collection of my recent work</p>
+          <p className="text-4xl font-semibold dark:text-white">Projects</p>
+          <p className="text-xl opacity-75 dark:text-white">A collection of my recent work</p>
           <div className="portfolio-projects">
             {projects.map((project ,index)=>(
-              <div key={index} className="project hover:shadow-2xl hover:scale-105 duration-700">
+              <div key={index} className="project hover:shadow-2xl hover:scale-105 duration-700 dark:border-slate-600">
               <img
                 loading="lazy"
                 src={project.img}
@@ -50,9 +50,9 @@ function Projects() {
                 style={{ borderRadius: "10px" }}
               />
               <div className="project-content">
-                <p className="font-semibold text-xl">{project.title}</p>
+                <p className="font-semibold text-xl dark:text-white">{project.title}</p>
                 {/* <p className="text-slate-500 text-lg min-w-24">{project.description}</p> */}
-                <p className="text-slate-500 text-lg text-pretty">Technologies used: {project.technologies.map((tech,i)=>(
+                <p className="text-slate-500 text-lg text-pretty dark:text-slate-400">Technologies used: {project.technologies.map((tech,i)=>(
                    <span key={i}> {tech} </span>
                 ))}
                 </p>

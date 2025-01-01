@@ -13,14 +13,14 @@ function Header() {
   }, []);
   return (
     <>
-      <header id="header">
+      <header id="header" className="dark:bg-slate-800">
         <div className="absolute left-0 top-0 -z-10 h-[100dvh] w-full bg-gradient-to-r from-pink-300 via-purple-200 to-indigo-200 opacity-30 blur-3xl"></div>
         <div className="header-container">
           <div data-aos="fade-right" className="header-text">
-            <p className="header-text-title text-4xl font-semibold">
+            <p className="header-text-title text-4xl font-semibold dark:text-white">
               Hello , I'm Rania Mohamed
             </p>
-            <p className="header-text-description text-slate-500 text-lg">
+            <p className="header-text-description text-slate-500 text-lg dark:text-slate-400">
               I'm a Freelance Frontend Developer based in Aswan , Egypt. I
               strives to build immersive and beautiful web applications through
               carefully crafted code and user-centric design.
@@ -30,16 +30,16 @@ function Header() {
               <button>Say Hello!</button>
               </a>
             </div>
-            <div className="header-text-calcs">
-              <div className="calcs-item">
+            <div className="header-text-calcs dark:text-white">
+              <div className="calcs-item rounded-xl dark:bg-slate-600">
                 <p className="font-bold text-lg">0 Y.</p>
                 <p className="font-medium text-sm">Experience</p>
               </div>
-              <div className="calcs-item">
+              <div className="calcs-item rounded-xl dark:bg-slate-600">
                 <p className="font-bold text-lg">+10</p>
                 <p className="font-medium text-sm">Project Completed</p>
               </div>
-              <div className="calcs-item">
+              <div className="calcs-item rounded-xl dark:bg-slate-600">
                 <p className="font-bold text-lg">1</p>
                 <p className="font-medium text-sm">Happy Client</p>
               </div>

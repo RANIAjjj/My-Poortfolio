@@ -15,8 +15,8 @@ function Info() {
     <>
       {/* <div className='info-container'> */}
       <div className="info">
-        <p className="text-3xl font-semibold">Let’s discuss your Project</p>
-        <p className="text-slate-500 text-xl">
+        <p className="text-3xl font-semibold dark:text-white">Let’s discuss your Project</p>
+        <p className="text-slate-500 text-xl dark:text-slate-400">
           I'm always interested in hearing about new projects and opportunities.
           Feel free to reach out if you'd like to connect!
         </p>
@@ -24,14 +24,14 @@ function Info() {
           {infos.map((item, index) => (
             <div
               key={index}
-              className="details-item hover:shadow-2xl hover:shadow-gray-400 hover:scale-100 duration-500"
+              className="details-item hover:shadow-xl hover:scale-100 duration-500"
             >
-              <p className="item-icon ">
+              <p className="item-icon dark:bg-slate-600">
                 <item.icon sx={{ color: purple["A700"] }} />
               </p>
               <div className="item-text">
-                <p className="text-slate-500 text-sm">{item.text1}</p>
-                <p className="text-l font-semibold">{item.text2}</p>
+                <p className="text-slate-500 text-sm dark:text-white">{item.text1}</p>
+                <p className="text-l font-semibold dark:text-slate-400">{item.text2}</p>
               </div>
             </div>
           ))}

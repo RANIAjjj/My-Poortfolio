@@ -37,10 +37,10 @@ function About() {
 
   return (
     <>
-      <section id="about" className="about-section">
+      <section id="about" className="about-section dark:bg-slate-800">
         <div
           data-aos="fade-up"
-          className="about-container shadow-2xl border-current"
+          className="about-container shadow-2xl border-current dark:bg-slate-800"
         >
           <div className="about-part1">
             <img
@@ -50,7 +50,7 @@ function About() {
               src={Img2}
               style={{ width: "18rem", height: "23rem", borderRadius: "7px" }}
             />
-            <div className="social-links shadow-2xl">
+            <div className="social-links shadow-2xl dark:bg-slate-800">
               {social.map((item, index) => (
                 <a aria-label={item.label} title="social link" key={index} href={item.link} target="_blank">
                   <item.icon
@@ -64,10 +64,10 @@ function About() {
             </div>
           </div>
           <div className="about-part2">
-            <p className="header-text-title text-4xl font-semibold">
+            <p className="header-text-title text-4xl font-semibold dark:text-white">
               I am a Professional Frontend Developer
             </p>
-            <p className="header-text-description text-slate-500 text-lg">
+            <p className="header-text-description text-slate-500 text-lg dark:text-slate-400">
               I am skilled in React with expertise in JavaScript, TypeScript,
               React Context and Redux Toolkit. has experience in building
               dynamic web applications, handling APIs. Proficient in front-end

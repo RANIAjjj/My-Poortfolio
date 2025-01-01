@@ -119,7 +119,6 @@ header {
 .about-section {
     display: flex;
     justify-content: center;
-    border-radius: 6px;
     height: 80vh;
    
 }
@@ -205,8 +204,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 15vh;
-    margin-bottom: 15vh;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
 }
 .portfolio-projects {
     display: grid;
@@ -260,7 +259,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 60px 0 60px 0;
+    padding: 60px 0 60px 0;
 }
 .skills-icons{
     display: grid;
@@ -278,9 +277,7 @@ header {
     row-gap: 20px;
     width: 33%;
 }
-.info-container{
-    /* width: 50%; */
-}
+
 .details-item{
     display: flex;
     column-gap: 15px;
@@ -294,9 +291,7 @@ header {
     flex-direction: column;
     column-gap: 18px;
 }
-form{
-    /* width: 30%; */
-}
+
 input ,textarea{
     border-bottom: 2px solid #aa00ff;
 }
@@ -310,7 +305,6 @@ input ,textarea{
     width: 35%;
 }
 .contact-section{
-    /* width: fit-content; */
     padding: 20vh 0;
 }
 /* footer */

@@ -40,7 +40,7 @@ function Form() {
         <div>
           <label
             htmlFor="name"
-            className="block text-sm font-medium text-gray-700"
+            className="block text-sm font-medium text-gray-700 dark:text-slate-400"
           >
             Name
           </label>
@@ -48,7 +48,7 @@ function Form() {
             type="text"
             id="name"
             name="name"
-            className="mt-1 block w-full rounded-md focus:outline-none  shadow-sm  bg-white px-4 py-2"
+            className="mt-1 block w-full rounded-md focus:outline-none  shadow-sm  bg-white px-4 py-2 dark:bg-slate-600"
             required
             placeholder="Your Name"
           />
@@ -56,7 +56,7 @@ function Form() {
         <div>
           <label
             htmlFor="email"
-            className="block text-sm font-medium text-gray-700"
+            className="block text-sm font-medium text-gray-700 dark:text-slate-400"
           >
             Email
           </label>
@@ -64,7 +64,7 @@ function Form() {
             type="email"
             id="email"
             name="email"
-            className="mt-1 block w-full rounded-md  shadow-sm focus:outline-none  bg-white px-4 py-2"
+            className="mt-1 block w-full rounded-md  shadow-sm focus:outline-none  bg-white px-4 py-2 dark:bg-slate-600"
             required
             placeholder="Your Email"
           />
@@ -72,7 +72,7 @@ function Form() {
         <div>
           <label
             htmlFor="message"
-            className="block text-sm font-medium text-gray-700"
+            className="block text-sm font-medium text-gray-700 dark:text-slate-400"
           >
             Message
           </label>
@@ -80,7 +80,7 @@ function Form() {
             id="message"
             name="message"
             rows={4}
-            className="mt-1 block w-full rounded-md shadow-sm focus:outline-none bg-white px-4 py-2"
+            className="mt-1 block w-full rounded-md shadow-sm focus:outline-none bg-white px-4 py-2 dark:bg-slate-600"
             required
           />
         </div>
