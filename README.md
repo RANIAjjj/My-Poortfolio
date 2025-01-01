@@ -24,4 +24,4 @@ Follow these steps to run the portfolio locally:
 1. Clone the repository: `git clone https://github.com/your-username/portfolio.git`  
 2. Navigate to the project directory: `cd portfolio`  
 3. Install dependencies: `npm install`  
-4. Start the development server: `npm start`  
+4. Start the development server: `npm run dev`  
